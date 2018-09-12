@@ -36,7 +36,7 @@ int lev_d_old, lev_d_new;
 // joystick setup
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID,JOYSTICK_TYPE_GAMEPAD,
   10, JOYSTICK_DEFAULT_HATSWITCH_COUNT,                  // Button Count, Hat Switch Count
-  false, false, false,     // No X and No Y, and no Z Axis
+  false, false, false,     // No X and No Y, and no Z Axis. However, when X, Y are false, computer can't recognize the device.
   false, false, false,   // No Rx, Ry, or Rz
   false, false,          // No rudder or throttle
   false, false, false);  // No accelerator, brake, or steering
@@ -61,6 +61,7 @@ void setup() {
   pinMode(lever_down, INPUT_PULLUP);
 
   Joystick.begin();
+
 
 }
 

@@ -27,7 +27,7 @@ Googling과 Stack Overflow, Arduino community를 뒤져가며 만들었습니다
 - arduino IDE를 이용하여 각 버튼의 pull-up 저항을 주도록 설정합니다. 이를 통해 특별한 물리적인 저항 연결 없이 조립이 가능합니다. analog pin의 경우 A0, A1 등 digital pin으로 사용하도록 미리 정의된 변수를 이용합니다.
 - 라이브러리 추가에서 Keyboard를 추가하고, 다운로드 합니다.
 - 업로드한 코드를 컴파일 후 업로드 하기 위해 보드 설정은 leonardo를(uno나 기타 다른 보드를 사용중이시면 맞는 보드 선택) 선택 후 보드가 연결된 포트를 설정해줍니다. 이후 해당 코드를 업로드 후 각 버튼이 의도한대로 눌리는지 확인 후 핀 번호를 수정해줍니다.
-- 코드는 두 종류를 업로드 하였습니다. key mapping 버전은 키보드의 키와 직접 매핑할 수 있습니다. device는 다른 능력자 분의 라이브러리를 사용하였습니다. (출처 : https://github.com/MHeironimus/ArduinoJoystickLibrary) 해당 코드 업로드 시, 컨트롤러 장치로 인식합니다.
+- 코드는 세 종류를 업로드 하였습니다. key mapping 버전은 키보드의 키와 직접 매핑할 수 있습니다. device는 다른 능력자 분의 라이브러리를 사용하였습니다. (출처 : https://github.com/MHeironimus/ArduinoJoystickLibrary) 해당 코드 업로드 시, 컨트롤러 장치로 인식합니다. 마지막으로, dpad는 8방향의 십자키로 인식하게끔 작성된 코드입니다. 메뉴 이동이나 십자키 조작이 필요할 경우 사용하시면 됩니다.
 
 ### 4. 참조
 ---
